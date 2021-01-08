@@ -1,0 +1,1048 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1.h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+@font-face {
+    font-family: 'FjallaOne';
+    src: url('../fonts/fjalla/FjallaOne.eot');
+    src: url('../fonts/fjalla/FjallaOne.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fjalla/FjallaOne.woff2') format('woff2'),
+        url('../fonts/fjalla/FjallaOne.woff') format('woff'),
+        url('../fonts/fjalla/FjallaOne.ttf') format('truetype'),
+        url('../fonts/fjalla/FjallaOne.svg#FjallaOne') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Extrabold.eot');
+    src: url('../fonts/open-sans/OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/OpenSans-Extrabold.woff2') format('woff2'),
+        url('../fonts/open-sans/OpenSans-Extrabold.woff') format('woff'),
+        url('../fonts/open-sans/OpenSans-Extrabold.ttf') format('truetype'),
+        url('../fonts/open-sans/OpenSans-Extrabold.svg#OpenSans-Extrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/open-sans/OpenSans-Bold.eot');
+    src: url('../fonts/open-sans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/open-sans/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/open-sans/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/open-sans/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Open Sans-regular';
+    src: url('../fonts/open-sans/OpenSans.eot');
+    src: url('../fonts/open-sans/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/OpenSans.woff2') format('woff2'),
+        url('../fonts/open-sans/OpenSans.woff') format('woff'),
+        url('../fonts/open-sans/OpenSans.ttf') format('truetype'),
+        url('../fonts/open-sans/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* =============================================
+			  Start Heading Section                 
+================================================= */
+.header-section{
+	width: 100%;
+	padding: 20px 0px;
+}
+.header-section .header{
+	width: 100%;
+}
+.header-section .header .logo{
+	width: 30%;
+	float: left;
+}
+.header-section .header .main-menu{
+	width: 70%;
+	float: left;
+}
+.header-section .header .main-menu ul{
+	text-align: right;
+}
+.header-section .header .main-menu ul li{
+	list-style: none;
+	display: inline;
+}
+.header-section .header .main-menu ul li a{
+	text-transform: capitalize;
+	color: #ce2253;
+	display: inline-block;
+	padding: 0px 20px 0px;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	border-bottom: 2px solid transparent;
+	border-top: 2px solid transparent;
+}
+.header-section .header .main-menu ul li a:hover{
+	color: #ff5733;
+	border-bottom: 2px solid #ce2253;
+	border-top: 2px solid #ce2253;
+}
+/* stickup.js */
+.isStuck{
+    left:0px;
+	width:100%;
+	background: #fff;
+}
+.navbar-wrapper {
+	width: 100%;
+  margin-top:0px;
+  position: relative;
+  z-index: 15;
+
+}
+/* =============================================
+			  End Heading Section                 
+================================================= */
+
+
+/* =============================================
+			  Start banner-section               
+================================================= */
+.banner-section{
+	width: 100%;
+	padding:216px 0px;
+	background-color: #fcf0f3;
+	background-image: url(../images/banner-bg.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+.banner-section .banner{
+	width: 100%;
+}
+.banner-section .banner h6{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+	display: inline;
+	padding-right: 20px;
+}
+
+.banner-section .banner h2{
+	font-size: 60px;
+	font-weight: 700;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+}
+.banner-section .banner p{
+	font-size: 16px;
+	line-break: 27px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	color: #414141;
+}
+.banner-section .banner .banner-btn{
+	margin-top: 30px;
+	float: left;
+}
+.banner-section .banner .banner-btn a{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	padding: 10px 30px;
+	color: #Fff;
+	background: #c70039;
+	border:2px solid transparent;
+}
+.banner-section .banner .banner-btn a:hover{
+	background: transparent;
+	border:2px solid #c70039;
+	color:#c70039;
+}
+.banner-section .bammer-inner .banner-icon{
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+.banner-section .bammer-inner .banner-icon a{
+	font-size: 18px;
+	padding: 0px 20px 0px 0px;
+	color: #c70039;
+}
+/* =============================================
+			  End banner-section               
+================================================= */
+
+
+/* =============================================
+			  Start About-section               
+================================================= */
+.About-section{
+	width: 100%;
+}
+.About-section .About{
+	width: 100%;
+	padding: 90px 0px;
+}
+.About .about-left{
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+.About .about-left img{
+	width: 80%;
+}
+.About .about-right{
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+.About .about-right h6{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+	display: inline;
+	padding-right: 20px;
+}
+
+.About .about-right h3{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'OpenSans-Bold';
+	color: #cb1449;
+	margin-top: 10px;
+}
+.About .about-right p{
+	font-size: 16px;
+	line-break: 27px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	color: #414141;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.About .about-right .About-btn-1st{
+	margin-top: 30px;
+	float: left;
+}
+.About .about-right .About-btn-1st a{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	padding: 10px 30px;
+	color: #Fff;
+	background: #c70039;
+}
+
+.About .about-right .About-btn-2nd{
+	margin-top: 30px;
+	margin-left: 30px;
+	float: left;
+}
+.About .about-right .About-btn-2nd a{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	padding: 8px 30px;
+	color: #c70039;
+	border:2px solid #c70039;
+}
+
+/* =============================================
+			  End about-section               
+================================================= */
+
+/* =============================================
+			  Start skill-section               
+================================================= */
+.skill-section{
+	width: 100%;
+}
+.skill-section .skill{
+	width: 100%;
+	padding: 90px 0px;
+}
+.skill .skill-left{
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+.skill .skill-left h6{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+	display: inline;
+	padding-right: 20px;
+}
+
+.skill .skill-left h3{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'OpenSans-Bold';
+	color: #cb1449;
+	margin-top: 10px;
+}
+.skill .skill-left p{
+	font-size: 16px;
+	line-break: 27px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	color: #414141;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.skill .skill-left .skill-btn{
+	margin-top: 30px;
+	float: left;
+}
+.skill .skill-left .skill-btn a{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	padding: 10px 30px;
+	color: #Fff;
+	background: #c70039;
+}
+/* Right */
+.skill .skill-right{
+	width: 50%;
+	float: left;
+	margin-top:40px;
+}
+.skill .skill-right h4{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color:#ff2d00 ;
+	padding-bottom: 5px;
+}
+
+.barfiller {
+	width: 100%;
+	height: 12px;
+	background: #ff2d00;
+	border: 1px solid #ccc;
+	position: relative;
+	margin-bottom: 20px;
+	box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5);
+	-moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5);
+  }
+  
+  .barfiller .fill {
+	display: block;
+	position: relative;
+	width: 0px;
+	height: 100%;
+	background: #333;
+	z-index: 1;
+  }
+  
+  .barfiller .tipWrap { display: none; }
+  
+  .barfiller .tip {
+	margin-top: -30px;
+	padding: 2px 4px;
+	font-size: 11px;
+	color: #fff;
+	left: 0px;
+	position: absolute;
+	z-index: 2;
+	background: #333;
+  }
+  
+  .barfiller .tip:after {
+	border: solid;
+	border-color: rgba(0,0,0,.8) transparent;
+	border-width: 6px 6px 0 6px;
+	content: "";
+	display: block;
+	position: absolute;
+	left: 9px;
+	top: 100%;
+	z-index: 9
+  }
+  
+/* =============================================
+			  End skill-section               
+================================================= */
+
+/* =============================================
+			  Start view-section               
+================================================= */
+.view-section{
+	width: 100%;
+}
+.view-section .view{
+	width: 100%;
+	padding: 90px 0px;
+	position: relative;
+	
+}
+.view .view-left{
+	width: 50%;
+	float: left;
+	text-align: left;
+	position: relative;
+}
+.work {
+	width: 250px;
+	height: 250px;
+	border: 3px solid #ff2d00;
+	border-radius: 50%;
+	position: relative;
+	margin: 0 auto;
+}
+.work-details{
+    width: 100px;
+	background-color: #cb1449;
+	color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+}
+.wd-1 {
+    top: -10px;
+    left: -20px;
+}
+.wd-2 {
+	right: -10px;
+	top: 20px;
+}
+.wd-3 {
+	bottom: 5px;
+	left: -20px;
+}
+.wd-4 {
+	bottom: -10px;
+	right: -10px;
+}
+/* right */
+.view .view-right{
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+.view .view-right h6{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+	display: inline;
+	padding-right: 20px;
+}
+
+.view .view-right h3{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'OpenSans-Bold';
+	color: #cb1449;
+	margin-top: 10px;
+}
+.view .view-right p{
+	font-size: 16px;
+	line-break: 27px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	color: #414141;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.view .view-right .view-btn{
+	margin-top: 30px;
+	float: left;
+}
+.view .view-right .view-btn a{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	padding: 10px 30px;
+	color: #c70039;
+	border: 2px solid #c70039;
+}
+/* =============================================
+			  End view-section               
+================================================= */
+
+/* =============================================
+			  Start what-section               
+================================================= */
+.what-section{
+	width: 100%;
+}
+.what-section .what{
+	width: 100%;
+	padding:60px 0px;
+}
+.what-section .what h6{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+	display: inline;
+	padding-right: 20px;
+}
+
+.what-section .what h3{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'OpenSans-Bold';
+	color: #cb1449;
+	margin-top: 10px;
+}
+.what-section .what p{
+	font-size: 16px;
+	line-break: 27px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	color: #414141;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+/* what-inner */
+.what-inner{
+	width: 29%;
+	float: left;
+	margin-right: 4.33%;
+	text-align: left;
+	margin-top: 60px;
+	border: 2px solid #d3d3d3;
+	outline: 2px solid #d3d3d3;
+	outline-offset: 7px;
+	border-bottom: 7px solid #ff2701 !important;
+}
+.what-inner-bottom .what-inner{
+	margin-top: 70px;
+}
+.what-inner-top .what-inner img, .what-inner-bottom .what-inner img{
+	margin-left: 5%;
+	margin-top: 20px;
+}
+.what-inner-top .what-inner h4, .what-inner-bottom .what-inner h4{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+	margin-top: 10px;
+	margin-left: 5%;
+}
+.what-inner-top .what-inner p, .what-inner-bottom .what-inner p{
+	font-size: 14px;
+	line-break: 24px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	color: #414141;
+	margin-top: 10px;
+	margin-left: 5%;
+}
+/* =============================================
+			  End what-section               
+================================================= */
+
+/* =============================================
+			  Start-protfolio-section               
+================================================= */
+.protfolio-section{
+	width: 100%;
+}
+.protfolio-section .protfolio{
+	width: 100%;
+}
+/* title */
+.protfolio-section .protfolio .protfolio-title{
+	width: 100%;
+	margin-top: 70px;
+}
+.protfolio-section .protfolio .protfolio-title h6{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+	display: inline;
+	padding-right: 20px;
+}
+
+.protfolio-section .protfolio .protfolio-title h3{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'OpenSans-Bold';
+	color: #cb1449;
+	margin-top: 10px;
+}
+/* menu */
+
+.protfolio-section .protfolio .protfolio-menu{
+	width:100%;
+	margin-top:50px;
+	margin-bottom: 60px;
+}
+.protfolio-section .protfolio .protfolio-menu ul{
+	text-align: left;
+}
+.protfolio-section .protfolio .protfolio-menu ul li{
+	list-style: none;
+	display: inline;
+}
+.protfolio-section .protfolio .protfolio-menu ul li a{
+	text-transform: uppercase;
+	color: #ff2701;
+	display: inline-block;
+	padding: 0px 20px 0px;
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	border-bottom: 2px solid transparent;
+}
+.protfolio-section .protfolio .protfolio-menu ul li a:hover{
+	color: #ff5733;
+	border-bottom: 2px solid #ce2253;
+}
+.protfolio-section .protfolio .protfolio-menu ul li a:first-child{
+	padding-left: 0px;
+}
+/* protfolio-details */
+.protfolio-section .protfolio .protfolio-details{
+	width: 29%;
+	float: left;
+	margin-right: 4.33%;
+}
+.protfolio-section .protfolio .protfolio-details img{
+	width: 100%;
+}
+.protfolio-section .protfolio .protfolio-details-bottom{
+	margin-top: 39px;
+}
+/* =============================================
+			  End-protfolio-section               
+================================================= */
+
+/* =============================================
+			  Start-feedback-section               
+================================================= */
+.feedback-section{
+	width: 100%;
+}
+.feedback-section .feedback{
+	width: 100%;
+}
+/* title */
+.feedback-section .feedback .feedback-title{
+	width: 100%;
+	margin-top: 70px;
+}
+.feedback-section .feedback .feedback-title h6{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+	display: inline;
+	padding-right: 20px;
+}
+
+.feedback-section .feedback .feedback-title h3{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'OpenSans-Bold';
+	color: #cb1449;
+	margin-top: 10px;
+}
+/* owl-inner */
+.feedback-section .owl-inner{
+	width: 100%;
+	margin-top: 120px;
+}
+.feedback-section .owl-inner .owl-one{
+	width: 25%;
+	float: left;
+}
+.feedback-section .owl-inner .owl-one img{
+	width: 60%;
+	height: 60%;
+	background: #ff2d00;
+	border-radius: 50%;
+	border: 8px solid #ff2d00;
+}
+.feedback-section .owl-inner .owl-two{
+	width: 40%;
+	float: left;
+}
+.feedback-section .owl-inner .owl-two h3{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'OpenSans-Bold';
+	color: #cb1449;
+	margin-top: 10px;
+}
+.feedback-section .owl-inner .owl-two p{
+	font-size: 14px;
+	line-break: 24px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	color: #414141;
+	margin-top: 5px;
+}
+.feedback-section .owl-inner .owl-three{
+	width: 25%;
+	float: left;
+	text-align: right;
+	margin-top: 20px;
+	margin-right: 10%;
+}
+.feedback-section .owl-inner .owl-three i{
+	color: #d4c807;
+}
+.feedback-section .owl-inner .owl-three p{
+	font-size: 14px;
+	line-break: 24px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #414141;
+	margin-top: 5px;
+}
+
+.owl-extra{
+	padding-top: 120px;
+}
+/* button */
+.feedback-section .owl-carousel .owl-nav{
+	display: none;
+}
+.feedback-section .owl-carousel .owl-dots{
+    text-align: center;
+    padding: 50px 0px 0px;
+}
+.feedback-section .owl-carousel .owl-dots button{
+    border: none;
+    background: #ff2d00;
+    border-radius: 50%;
+    padding: 5px!important;
+    margin-right: 15px;
+	transition:1s;
+}
+.feedback-section .owl-carousel .owl-dots button:hover{
+	transform:scale(2);
+	background: #cb1449;
+}
+/* =============================================
+			  End-feedback-section               
+================================================= */
+
+/* =============================================
+			  Start-hire-section               
+================================================= */
+.hire-section{
+	width: 100%;
+	padding: 25px 0px;
+	background-color: #cb1449;
+	background-image: url(../images/hire-bg.png);
+	background-repeat: no-repeat;
+	background-position: 80% 8%;
+	background-size:30%;
+	margin-top: 90px;
+}
+.hire-section .hire{
+	width: 100%;
+}
+.hire-section .hire .hire-title{
+	width: 50%;
+	float: left;
+}
+.hire-section .hire .hire-title h3{
+	font-size: 25px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #fff;
+	margin-top: 10px;
+}
+.hire-section .hire .hire-btn{
+	width: 50%;
+	float: left;
+	margin-top: 30px;
+}
+.hire-section .hire .hire-btn a{
+	font-size: 18px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	padding: 10px 40px;
+	color: #Fff;
+	border: 2px solid #fff;
+	margin-left: 35%;
+	
+}
+/* =============================================
+			  End-hire-section               
+================================================= */
+
+/* =============================================
+			 Start-blog-section               
+================================================= */
+.blog-section{
+	width: 100%;
+}
+.blog-section .blog{
+	width: 100%;
+}
+/* title */
+.blog-section .blog .blog-title{
+	width: 100%;
+	margin-top: 70px;
+}
+.blog-section .blog .blog-title h6{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+	display: inline;
+	padding-right: 20px;
+}
+
+.blog-section .blog .blog-title h3{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'OpenSans-Bold';
+	color: #cb1449;
+	margin-top: 10px;
+}
+/* blog-inner */
+.blog-section .blog .blog-inner{
+	width: 30%;
+	float: left;
+	margin-right: 3.33%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.blog-section .blog .blog-inner:hover{
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .25);
+}
+.blog-section .blog .blog-inner:hover .blog-details{
+	border: 2px solid transparent;
+}
+.blog-section .blog .blog-inner img{
+	width: 100%;
+}
+.blog-section .blog .blog-inner .blog-details{
+	border: 2px solid #d6d6d6;
+	border-top: none !important;
+}
+.blog-section .blog .blog-inner .blog-details h6{
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #cb1449;
+	margin-left: 20px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+.blog-section .blog .blog-inner .blog-details p{
+	font-size: 14px;
+	line-break: 24px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	color: #414141;
+	margin-left: 20px;
+}
+.blog-section .blog .blog-inner .blog-details .blog-extra{
+	color: #ff2701;
+}
+/* =============================================
+			 End-blog-section               
+================================================= */
+
+/* =============================================
+			 Start-form-section               
+================================================= */
+.form-section{
+	width: 100%;
+}
+.form-section .form{
+	width: 100%;
+}
+/* title */
+.form-section .form .form-title{
+	width: 100%;
+	margin-top: 70px;
+}
+.form-section .form .form-title h6{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'OpenSans-Bold';
+	color: #ff2701;
+	display: inline;
+	padding-right: 20px;
+}
+
+.form-section .form .form-title h3{
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'OpenSans-Bold';
+	color: #cb1449;
+	margin-top: 10px;
+}
+/* inner */
+.form-section .form .form-inner{
+	width: 100%;
+	margin-top: 40px;
+}
+.form-section .form .form-inner .form-left{
+	width: 50%;
+	float: left;
+	margin-bottom: 150px;
+}
+.form-section .form .form-inner .form-left .form-left-details{
+	width: 100%;
+	padding: 30px 0px;
+	margin-top: 20px;
+}
+.form-section .form .form-inner .form-left .form-left-details:first-child{
+	padding-top: 0px;
+}
+.form-left .form-left-details .form-left-icon{
+	width: 15%;
+	float: left;
+}
+.form-left .form-left-details .form-left-icon img{
+	width: 60%;
+}
+.form-left .form-left-details .form-left-text{
+	width: 85%;
+	float: left;
+	margin-top: -3px;
+}
+.form-left .form-left-details .form-left-text p{
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	color: #525252;
+}
+/* form */
+.form-section .form .form-inner .form-right{
+	width: 50%;
+	float: left;
+	margin-top: 30px;
+}
+
+.form-section .form .form-right .form input{
+	padding: 12px 30px 12px 5px;
+	margin-right: 10px;
+	border: 2px solid #ff2d00;
+}
+.form-section .form .form-right .form textarea{
+	padding: 0px 188px 0px 12px;
+	border: 2px solid #ff2d00;
+	margin-top: 40px;
+}
+
+.form-section .form .form-right .form button{
+	padding: 10px 60px;
+	border: none;
+	background: #cb1449;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Open Sans-regular';
+	margin-top: 40px;
+}
+/* =============================================
+			 End-form-section               
+================================================= */
+
+/* =============================================
+			Start-animation-section               
+================================================= */
+.animation-section{
+	width: 100%;
+	padding: 80px 0px 350px;
+	background: #eee;
+}
+.animation-section .animation{
+	width: 100%;
+}
+
+.animation-section .animation .animation-inner{
+	width: 25%;
+	float: left;
+	text-align: center;
+	border: 2px solid #cb1449;
+}
+.animation-section .animation .animation-inner .fa-heart{
+	font-size: 90px;
+	color: #cb1449;
+	margin-top: 20px;
+}
+
+.animation-section .animation .animation-inner .counter-wrapper{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.animation-section .animation .animation-inner .text-block{
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+/* =============================================
+			End-animation-section               
+================================================= */
+
+
+/* =============================================
+			Start-footer-section               
+================================================= */
+
+.footer-section{
+	width: 100%;
+	padding: 15px 0px;
+	background: #ff2d00;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.footer-section p{
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	color: #fff;
+}
+/* =============================================
+			End-footer-section               
+================================================= */
